@@ -1,15 +1,33 @@
 {
-  "name": "vue-chartjs-wrapper",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-chartjs3",
+  "version": "1.0.0",
+  "description": "A wrapper to use in vue projects for chartjs version 3",
+  "private": false,
+  "main": "src/Chart.vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-lib": "vue-cli-service build --target lib --name vue-chartjs3-wrapper src/Chart.vue"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeLenaleee/vue-chartjs3.git"
+  },
+  "keywords": [
+    "vue",
+    "chartjs"
+  ],
+  "author": "Jacco van den Berg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeeLenaleee/vue-chartjs3/issues"
+  },
+  "homepage": "https://github.com/LeeLenaleee/vue-chartjs3#readme",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "chart.js": "^3.0.0-beta.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
