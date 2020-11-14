@@ -1,24 +1,33 @@
 # vue-chartjs-wrapper
+A wrapper around the chart.js library based on vue-chart.js
 
-## Project setup
-```
-yarn install
-```
+## using the wrapper
+You can import Chart and use it as a normal component in your vue app.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+For specific documentation about the library see: https://www.chartjs.org/
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### example
+    <template>
+        <Chart :data="data" :options="options" :type="type" /> 
+    </template>
+    
+    <script>
+    import Chart from 'vue-chartjs3'
+       
+    export default {
+        components: {
+            Chart
+        },
+        data () {
+            return{
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [],
+                }
+                options: {}
+            }
+        }
+    }
+    </script>
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
