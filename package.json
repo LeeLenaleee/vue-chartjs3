@@ -1,6 +1,6 @@
 {
   "name": "vue-chartjs3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper to use in vue projects for chartjs version 3",
   "private": false,
   "main": "src/Chart.vue",
@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/LeeLenaleee/vue-chartjs3#readme",
   "dependencies": {
+    "chart.js": "^3.0.0-beta.6",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "chart.js": "^3.0.0-beta.6"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
