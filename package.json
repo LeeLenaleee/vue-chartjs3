@@ -16,7 +16,8 @@
   },
   "keywords": [
     "vue",
-    "chartjs"
+    "chartjs",
+    "wrapper"
   ],
   "author": "Jacco van den Berg",
   "license": "MIT",
