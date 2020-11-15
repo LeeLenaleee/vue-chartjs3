@@ -1,6 +1,6 @@
 {
   "name": "vue-chartjs3",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A wrapper to use in vue projects for chartjs version 3",
   "private": false,
   "main": "src/Chart.vue",
