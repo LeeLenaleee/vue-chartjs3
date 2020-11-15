@@ -1,10 +1,12 @@
 # vue-chartjs-wrapper
 A wrapper around the chart.js library based on vue-chart.js
 
+You can dynamically change the options, data or chart type, and the chart will update automatically update for you.
+
 ## using the wrapper
 You can import Chart and use it as a normal component in your vue app.
 
-For specific documentation about the library see: https://www.chartjs.org/
+For the specific documentation about the library see: https://www.chartjs.org/
 
 ### example
     <template>
