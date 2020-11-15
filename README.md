@@ -1,5 +1,5 @@
 # vue-chartjs-wrapper
-A wrapper around the chart.js library based on vue-chart.js
+A wrapper around the chart.js (version 3) library based on vue-chart.js
 
 You can dynamically change the options, data or chart type, and the chart will update automatically update for you.
 
@@ -21,14 +21,28 @@ For the specific documentation about the library see: https://www.chartjs.org/
             Chart
         },
         data () {
-            return{
-                type: 'line',
-                data: {
-                    labels: [],
-                    datasets: [],
-                }
-                options: {}
-            }
+            return {
+                  type: 'line',
+                  data: {
+                    labels: ["Car", "Bike", "Walk", "Boat", "Plane", "Anything else"],
+                    datasets: [
+                      {
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: '#386380'
+                      },	
+                      {
+                        label: '# of Points',
+                        data: [7, 11, 5, 8, 3, 7],
+                        backgroundColor: '#ff6384'
+                      }
+            		],
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                  }
+            	}
         }
     }
     </script>
