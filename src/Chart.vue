@@ -1,12 +1,7 @@
 <script>
 import * as ChartJs from 'chart.js'
 
-for (let chartJsKey in ChartJs) {
-  if (!ChartJs[chartJsKey].id) {
-    continue;
-  }
-  ChartJs.Chart.register(ChartJs[chartJsKey])
-}
+ChartJs.Chart.register.apply(null, Object.values(ChartJs).filter((chartClass) => (chartClass.id)));
 
 export default {
   props: {
